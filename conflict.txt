@@ -1,1 +1,1 @@
-This is the firs line in the conflict file.
+This line was added on the feature_conflict branch.
