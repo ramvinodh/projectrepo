@@ -1,5 +1,96 @@
-<<<<<<< HEAD
-This line was added DIFFERENTLY on the main branch.
-=======
-This line was added on the feature_conflict branch.
->>>>>>> feature_conflict
+  435  pwd
+  436  cd Documents
+  437  pwd
+  438  git --version
+  439  git config --global user.name "ramvinodh"
+  440  git config --global user.email "ramvinodh@gmail.com"
+  441  mkdir projectrepo
+  442  cd projectrepo
+  443  pwd
+  444  get init
+  445  git init
+  446  echo "# Project Repo" > README.md
+  447  echo "This is the initial setup for the project." >> README.md
+  448  ls -altr
+  449  view README.md 
+  450  pwd
+  451  git status
+  452  git add README.md 
+  453  git status
+  454  git commit -m "Initial comit: Add README.md"
+  455  git log --oneline
+  456  git log
+  457  git branch featurex
+  458  git checkout featurex
+  459  git branch
+  460  echo "def add_two_numbers(num1, num2):" > feature.py
+  461  echo "  \"\"\"Adds two numbers and returns the result.\"\"\"" >> feature.py
+  462  echo "  return num1 + num2" >> feature.py
+  463  ls -altr
+  464  view feature.py 
+  465  git statis
+  466  git status
+  467  git add feature.py
+  468  git status
+  469  git commit -m "Feat: Add feature.py with Add function"
+  470  git log --oneline
+  471  git checkout main
+  472  git branch
+  473  git checkout master
+  474  git branch -m master main
+  475  git branch -la
+  476  ls -altr
+  477  git log --oneline
+  478  git echo "This is the firs line in the conflict file."
+  479  git echo "This is the firs line in the conflict file." > conflict.txt
+  480  echo "This is the firs line in the conflict file." > conflict.txt
+  481  ls -altr
+  482  git add conflict.txt
+  483  git status
+  484  git commit -m "Add conflict.txt on main"
+  485  ls -altr
+  486  git checkout -b feature_conflict
+  487  git branch -ls
+  488  git branch -la
+  489  echo "This line was added on the feature_conflict branch." > conflict.txt
+  490  git add conflict.txt
+  491  git commit -m "Add conflict.txt on feature_conflict.txt"
+  492  git checkout main
+  493  ls -altr
+  494  echo "This line was added DIFFERENTLY on the main branch." > conflict.txt
+  495  git add conflict.txt
+  496  git commit -m "Modify conflict.txt on main"
+  497  pwd
+  498  git branch -la
+  499  git merge feature_conflict
+  500  git status
+  501  pwd
+  502  git branch -la
+  503  git add conflict.txt
+  504  git status
+  505  git commit -m "Merge feature_conflict into main, resolving conflict"
+  506  git status
+  507  git log --oneline
+  508  git log --oneline --graph
+  509  pwd
+  510  git remote add origin https://github.com/ramvinodh/projectrepo.git
+  511  git remote -v
+  512  git checkout main
+  513  git push -u origin main
+  514  git checkout -b collaborator_update
+  515  git branch -la
+  516  echo "An update presumably made by a collaborator." >> README.md
+  517  git add README.md
+  518  git status
+  519  git commit -m "Add collaborator update"
+  520  git push -u origin collaborator_update
+  521  git --log --oneline
+  522  git log --oneline
+  523  git log --oneline --graph
+  524  git checkout main
+  525  git fetch origin
+  526  git branch -la
+  527  git merge origin/collaborator_update
+  528  git status
+  529  git log --oneline --graph
+  530  git push origin main
