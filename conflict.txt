@@ -1,1 +1,1 @@
-This is the firs line in the conflict file.
+This line was added DIFFERENTLY on the main branch.
