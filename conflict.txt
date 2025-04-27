@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 This line was added DIFFERENTLY on the main branch.
+=======
+This line was added on the feature_conflict branch.
+>>>>>>> feature_conflict
